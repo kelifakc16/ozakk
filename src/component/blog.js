@@ -24,7 +24,7 @@ background-color: #FDAC03;
 h1{
 font: normal normal 600 50px Titillium Web;
 letter-spacing: 0.35px;
-color: #291B00;
+color: black;
 padding:5px 0px;
 }
 p{

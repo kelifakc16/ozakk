@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1606.047" viewBox="0 0 1920 1606.047">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="-0.315" y2="-0.327" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f69722"/>
+      <stop offset="1" stop-color="#ea4c10"/>
+    </linearGradient>
+  </defs>
+  <path id="contact_background" data-name="contact background" d="M0,0H1920V1606.047H0Z" fill="url(#linear-gradient)"/>
+</svg>
