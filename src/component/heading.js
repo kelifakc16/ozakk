@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import img from '../images/logo.svg';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 const Header = styled.nav`
 
 .nav_right{
@@ -12,14 +13,19 @@ const Header = styled.nav`
   justify-content: flex-end; 
 }
 
- `
-const StyledLink=styled(Nav.Link)`
-p{
-color: #3D2B01;
-font: normal normal normal 15px Arial;
-}
 
-`
+ `
+ export const NavLink=styled(Link)`
+ color: black;
+ text-decoration: none;
+ font-size: 18px;
+ align-items: center;
+ padding: 10px 5px 0px 13px;
+
+  &:hover{
+    color:#FDAC03;
+  }
+ `
 
 
 export default function Heading() {
@@ -31,18 +37,18 @@ export default function Heading() {
           <Navbar.Brand href="#">
             <img
               src={img}
-              width="300"
-              height="80"
+              width="280"
+              height="55"
               alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="nav_right">
-              <StyledLink href=""><p>Learn</p></StyledLink>
-              <StyledLink href=""> <p>Sample Contracts</p></StyledLink>
-              <StyledLink href=""><p>Forum</p> </StyledLink>
-              <StyledLink href=""><p>Blog</p> </StyledLink>
-              <StyledLink href=""><p>About Us </p></StyledLink>
+              <NavLink to="/"><p>Learn</p></NavLink>
+              <NavLink to=""> <p>Sample Contracts</p></NavLink>
+              <NavLink to=""><p>Forum</p> </NavLink>
+              <NavLink to=""><p>Blog</p> </NavLink>
+              <NavLink to="/aboutus"><p>About Us </p></NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
